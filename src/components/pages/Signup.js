@@ -1,3 +1,4 @@
+import React from "react";
 import classes from "../../Styles/Signup.module.css";
 import Button from "../Buttton";
 import Checkbox from "../Checkbox";

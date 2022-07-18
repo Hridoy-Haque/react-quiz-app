@@ -1,3 +1,5 @@
+import React from "react";
+
 import classes from "../Styles/Question.module.css";
 import Answers from "./Answers";
 export default function Question() {

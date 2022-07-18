@@ -1,3 +1,4 @@
+import React from "react";
 import image from "../Assets/images/3.jpg";
 import classes from "../Styles/Video.module.css";
 

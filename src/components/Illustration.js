@@ -1,3 +1,4 @@
+import React from "react";
 import signupImage from "../Assets/images/signup.svg";
 import classes from "../Styles/Illustration.module.css";
 

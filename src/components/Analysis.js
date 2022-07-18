@@ -1,5 +1,7 @@
+import React from "react";
 import classes from "../Styles/Analysis.module.css";
 import Question from "./Question";
+
 export default function Analysis() {
   return (
     <div className={classes.analysis}>

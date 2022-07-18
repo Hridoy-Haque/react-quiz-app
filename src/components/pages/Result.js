@@ -1,3 +1,4 @@
+import React from "react";
 import Analysis from "../Analysis.js";
 import Summary from "../Summary.js";
 export default function Result() {
