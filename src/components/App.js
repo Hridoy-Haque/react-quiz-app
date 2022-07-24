@@ -8,6 +8,8 @@ import Login from "./pages/Login";
 import Quiz from "./pages/Quiz";
 import Result from "./pages/Result";
 import Signup from "./pages/Signup";
+import PrivateOutlet from "./PrivateOutlet";
+import PublicOutlet from "./PublicOutlet";
 
 export default function App() {
   return (
@@ -16,9 +18,13 @@ export default function App() {
         <Layout>
           <Routes>
             <Route exact path="/" element={<Home />}></Route>
-            <Route exact path="/signup" element={<Signup />}></Route>
-            <Route exact path="/login" element={<Login />}></Route>
-            <Route exact path="/quiz" element={<Quiz />}></Route>
+            <Route exact path="/*" element={<PublicOutlet />}>
+              <Route exact path="signup" element={<Signup />} />
+              <Route exact path="login" element={<Login />} />
+            </Route>
+            <Route exact path="/*" element={<PrivateOutlet />}>
+              <Route exact path="quiz" element={<Quiz />} />
+            </Route>
             <Route exact path="/result" element={<Result />}></Route>
           </Routes>
         </Layout>
